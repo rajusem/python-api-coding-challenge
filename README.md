@@ -13,8 +13,9 @@ Go to poject folder and run below commands.
 pip3 install -r requirements.txt
 gunicorn --workers=2 -b 0.0.0.0:5000 run:app
 ```
+worker=2 means 2 process/worker will run for this command, and it will host inot 5000 port. 
 
-### Parse CI Logs
+### API to parse CI Logs
 ```bash
 POST /api/log-parser
 content-type: multipart/form-data
